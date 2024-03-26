@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Libre+Barcode+39+Text&family=Workbench&display=swap" rel="stylesheet">
+
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <header id="header" >
+        <img src="./images/logo.png" alt="logo" id="header-img" >
+        <nav id="nav-bar" >
+            <ul>
+                <li><a class="nav-link" href="#book">Book</a></li>
+                <li><a class="nav-link" href="#design">Design</a></li>
+                <li><a class="nav-link" href="#order">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="book">
+            <img src="./images/laptop.jpg" alt="nothing book" id="book-photo">
+            <article>
+                <h2>Book</h2>
+                <p> Where elegance meets innovation. Crafted with precision and designed to elevate your reading and writing experience, the Nothing Book redefines the boundaries of style and functionality.</p>
+            </article>
+        </section>
+        <section id="design">
+            <article>
+                <h2>Design</h2>
+                <p class="text-desing">At the heart of the Nothing Book lies cutting-edge technology engineered to empower your literary pursuits. With its sleek and minimalist design, this modern masterpiece seamlessly combines the timeless charm of a classic book with the convenience of digital innovation.</p>
+                <iframe id="video" src="https://www.youtube.com/embed/ozGQ2q4l4ys?si=Cnf-PcRN6yQSRZzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p class="text-desing">With its lightweight and portable design, the Nothing Book is the epitome of convenience. Slip it into your bag and take it with you wherever you go, whether you're commuting to work or lounging in your favorite coffee shop. And with long-lasting battery life, you can lose yourself in your favorite stories for hours on end without having to worry about recharging.</p>
+            </article>
+        </section>
+        <section id="order">
+            <h2>Order</h2>
+            <h3>Choose a size</h3>
+            <div id="pricing">
+                <div class="cards">
+                    <h4>13" display</h4>
+                    <h5>$700 USD</h5>
+                    <p>i5 12900k <br> 8GB of ram <br> 256GB of SSD</p>
+                    <button>Select</button>
+                </div>
+
+                <div class="cards">
+                    <h4>15" display</h4>
+                    <h5>$1000 USD</h5>
+                    <p>i7 12900k <br> 16GB of ram <br> 500GB of SSD</p>
+                    <button>Select</button>
+                </div>
+
+                <div class="cards">
+                    <h4>17" display</h4>
+                    <h5>$1200 USD</h5>
+                    <p>i9 12900k <br> 24GB of ram <br> 1TB of SSD</p>
+                    <button>Select</button>
+                </div>
+            </div>
+            <h3>Sign Up to Order</h3>
+            <form action="https://www.freecodecamp.com/email-submit" id="form" >
+                <label for="name">Full name</label>
+                <input type="text" required id="name" placeholder="John Smith">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="email@example.com">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" required placeholder="+00 (111) 111-1111">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" required placeholder="123 Main Street, City, State, Zip Code">
+                <input type="submit" value="submit" id="submit">
+                
+    
+            </form>
+        </section>
+        
+    </main>
+    <hr>
+    <footer>
+        <ul>
+            <li>Support</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+        </ul>
+        <address>
+            Copyright 2024, Nothing - Book (fake page)
+        </address>
+    </footer>
+</body>
+</html>

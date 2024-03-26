@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 Documentation Page</title>
+	<meta name="author" content="Ricardo Hernandez">
+	<meta name="description" content="Documentation page for HTML">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/x-icon" href=""/>
+</head>
+
+<body>
+	<nav id="navbar">
+        <header><h1>HMTL5 Documentation</h1></header>
+        <ul id="nav-list">
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Elements">Elements</a></li>
+            <li><a class="nav-link" href="#Attributes">Attributes</a></li>
+            <li><a class="nav-link" href="#Input">Inputs</a></li>
+            <li><a class="nav-link" href="#Buttons">Buttons</a></li>
+            <li><a class="nav-link" href="#Forms">Forms</a></li>
+        </ul>
+        
+    </nav>
+	<main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header><h2>Introduction</h2></header>
+            <p>HTML is a markup language used to create the structure and content of web pages. It consists of a set of elements that define the layout, text, images, multimedia, and interactive elements of a webpage. HTML5 is the latest version of HTML, introducing new features such as native support for video and audio playback, canvas for drawing graphics, and improved support for offline applications.</p>
+            <p>HTML documents are text files with a .html extension. They are composed of elements enclosed within opening and closing tags. Elements can have attributes that provide additional information about the element or modify its behavior. HTML documents are rendered by web browsers, which interpret the markup and display the content to users.</p>
+            <p>HTML5 introduces new semantic elements, such as &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;, &lt;footer&gt;, which provide clearer structure and meaning to web content. <br> Here's a basic example:</p>
+            
+            <pre>
+<code>
+&lt;!DOCTYPE html&gt; 
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, 
+    initial-scale=1.0"&gt;
+    &lt;title&gt;HTML5 Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt; &lt;/header&gt;
+    &lt;main&gt; &lt;/main&gt;
+    &lt;aside&gt; &lt;/aside&gt;
+    &lt;footer&gt; &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code>
+            </pre>
+        <hr>
+        </section>
+        <section class="main-section" id="Elements">
+            <header><h2>Elements</h2></header>
+            <p>HTML elements are the building blocks of web pages. They define the structure and content of a webpage by encapsulating different types of content. <br>Some common HTML elements include:</p>
+            <ul>
+                <li>Headings: &lt;h1&gt; to &lt;h6&gt; for defining headings of varying sizes.</li>
+                <li>Paragraphs: &lt;p&gt; for defining paragraphs of  text</li> 
+                <li>Links: &lt;a&gt; for creating hyperlinks to other web pages or resources.</li>
+                <li>Images: &lt;img&gt; for embedding images into the webpage.</li>
+                <li>Lists: &lt;ul&gt;;, &lt;ol&gt;, and &lt;li&gt; for creating unordered and ordered lists.</li>
+            </ul>
+            <pre>
+<code>
+&lt;h1&gt;This is a Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;a href="https://www.example.com"&gt;This is a link&lt;/a&gt;
+&lt;img src="image.jpg" alt="Image Description"&gt;
+&lt;ul&gt;
+&lt;li&gt;Item 1&lt;/li&gt;
+&lt;li&gt;Item 2&lt;/li&gt;
+&lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+</code>
+            </pre>
+            <p>Each element can contain content and other nested elements, allowing for the creation of complex webpage layouts.</p>
+        </section>
+        <hr>
+        <section class="main-section" id="Attributes">
+            <header><h2>Attributes</h2></header>
+            <p>HTML attributes provide additional information about an element or modify its behavior. Attributes are added within the opening tag of an element and consist of a name and value pair.<br> Some common attributes include:</p>
+            <ul>
+                <li>id: Used to uniquely identify an element within a document.</li>
+                <li>class: Used to apply one or more CSS classes to an element.</li>
+                <li>src: Specifies the URL of the resource to be embedded (e.g., image source).</li>
+                <li>href: Specifies the URL of the linked resource (e.g., hyperlink reference).</li>
+                <li>alt: Provides alternative text for an image.</li>
+                <li>title: Provides additional information about an element (e.g., tooltip text)</li>
+            </ul>
+            <pre>
+<code>
+&lt;img src="image.jpg" alt="Image Description"&gt;
+&lt;a href="https://www.example.com" title="Link Title"&gt;
+This is a link&lt;/a&gt;
+&lt;input type="text" id="username" 
+class="input-field" placeholder="Enter your username"&gt;
+</code>
+            </pre>
+            <p>Attributes enhance the functionality and accessibility of HTML elements.</p>
+        </section>
+        <hr>
+        <section class="main-section" id="Input">
+            <header><h2>Inputs</h2></header>
+            <p>HTML input elements are used within forms to collect user input. HTML5 introduces several new input types, each designed for specific types of data entry. <br>Some commonly used input types include:</p>
+            <ul>
+                <li>Text: &lt;input type="text"&gt; for single-line text input.</li>
+                <li>Password: &lt;input type="password"&gt; for password input (text is masked).</li>
+                <li>Email: &lt;input type="email"&gt; for email address input with validation.</li>
+                <li>Checkbox: &lt;input type="checkbox"&gt; for selecting multiple options.</li>
+                <li>Radio: &lt;input type="radio"&lt; for selecting a single option from a list</li>
+                <li>Submit: <input type="submit"> for submitting a form.</li>
+            </ul>
+                <pre>
+<code>
+&lt;input type="text" placeholder="Enter your name"&gt;
+&lt;input type="password" 
+placeholder="Enter your password"&gt;
+&lt;input type="email" placeholder="Enter your email"&gt;
+&lt;input type="checkbox" id="checkbox1" 
+name="checkbox1" value="value1"&gt;
+&lt;input type="radio" id="radio1" name="radio" 
+value="value1"&gt;
+&lt;input type="submit" value="Submit"&gt;
+
+</code>
+                </pre>
+                <p>Input types help to standardize user input and provide built-in validation for certain data types.</p>
+            
+        </section>
+        <hr>
+        <section class="main-section" id="Buttons">
+            <header><h2>Buttons</h2></header>
+            <p>HTML buttons allow users to trigger actions or submit forms within a webpage. There are several types of buttons, each with its own purpose:</p>
+            <ul>
+                <li>&lt;button&gt;: A clickable button with customizable content and behavior.</li>
+                <li>&lt;input type="button"&gt;: A button with customizable content and behavior.</li>
+                <li>&lt;input type="submit"&gt;: A button used to submit a form</li>
+                <li>&lt;input type="reset"&gt;: A button used to reset a form to its initial state.</li>
+            </ul>
+            <pre>
+<code>
+&lt;button onclick="alert('Hello, World!')"
+&gt;Click Me&lt;/button&gt;
+&lt;input type="button" value="Click Me"&gt;
+&lt;input type="submit" value="Submit Form"&gt;
+&lt;input type="reset" value="Reset Form"&gt;
+
+</code>
+            </pre>
+            <p>Buttons can be styled using CSS to enhance their appearance and usability.</p>
+        </section>
+        <hr>
+        <section class="main-section" id="Forms">
+            <header><h2>Forms</h2></header>
+            <p>HTML forms are used to collect user input and submit it to a web server for processing. Forms consist of one or more input elements enclosed within a &lt;form&gt; element. Common form elements include text fields, checkboxes, radio buttons, dropdown menus, and submit buttons</p>
+            <p>When a user submits a form, the data is sent to the server specified in the form's action attribute via an HTTP request. The server processes the data and may return a response to the user. Forms play a crucial role in user interaction on the web and are used for various purposes such as user registration, data submission, and search functionality</p>
+            <pre>
+<code>
+ &lt;form action="/submit-form" method="post"&gt;
+&lt;label for="name"&gt;Name:&lt;/label&gt;
+&lt;input type="text" id="name" name="name" required&gt;
+&lt;label for="email"&gt;Email:&lt;/label&gt;
+&lt;input type="email" id="email" name="email" required&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+</code>
+            </pre>
+            <p>This expanded content provides a more comprehensive overview of HTML5, covering its key concepts, elements, attributes, input types, buttons, and forms in greater detail.</p>
+        </section>
+        
+    </main>
+	
+
+	
+</body>
+
+</html>

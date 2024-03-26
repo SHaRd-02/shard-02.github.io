@@ -1,0 +1,36 @@
+{
+  "name": "BMI Watcher",
+  "short_name": "BMI",
+  "icons": [
+    {"src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}
+  ],
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "standalone",
+  "apple-touch-startup-image": "/splash-screen.png",
+  "offline": true,
+  "offline_urls": [
+    "/bmi.html",
+    "/bmiStyle.css",
+    "/manifest.json",
+    "/android-chrome-192x192.png",
+    "/android-chrome-512x512.png",
+    "/apple-touch-icon.png",
+    "/splash-screen.png",
+    "/scripts/script.js",
+    "/https://shard-02.github.io/SHaRd-website/bmi.html" 
+  ],
+  "start_url": "/SHaRd-website/bmi.html", 
+  "scope": "/",
+  "prefer_related_applications": false,
+  "lang": "en",
+  "orientation": "portrait",
+  "categories": [
+      "fitness",
+      "health",
+      "lifestyle",
+      "medical"
+  ]
+}
