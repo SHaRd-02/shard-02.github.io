@@ -36,5 +36,4 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.6.3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./c-waste  # This should point to the directory with your built files
