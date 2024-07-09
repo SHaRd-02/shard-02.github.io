@@ -1,18 +1,24 @@
 {
   "name": "c-waste",
   "version": "1.0.0",
-  "description": "Your project description",
-  "main": "index.js",  // Adjust the main entry point if needed
+  "description": "C-waste project",
+  "main": "c-waste/c-waste.html",
   "scripts": {
-    "start": "node index.js",  // Example script, adjust as per your needs
-    "build": "echo 'Build script placeholder'"  // Replace with actual build script if needed
+    "start": "echo 'No start script specified'",
+    "build": "echo 'No build script specified'"
   },
-  "author": "Your Name",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SHaRd-02/shard-02.github.io"
+  },
+  "keywords": [
+    "C-waste",
+    "environment",
+    "recycling"
+  ],
+  "author": "Ricardo Hernandez",
   "license": "MIT",
   "dependencies": {
-    // Add your dependencies here
-  },
-  "devDependencies": {
-    // Add your development dependencies here
+    "firebase": "^10.12.2"
   }
 }
