@@ -192,19 +192,20 @@
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
+        
+        // Load environment variables
+        import dotenv from 'dotenv';
+        dotenv.config();
+        
         const firebaseConfig = {
-          apiKey: "AIzaSyDompZeqEjtsXToS_GOZctXolaMzHVr_m0",
-          authDomain: "todo-1d7d0.firebaseapp.com",
-          projectId: "todo-1d7d0",
-          storageBucket: "todo-1d7d0.appspot.com",
-          messagingSenderId: "5039375976",
-          appId: "1:5039375976:web:1b61e5b9c5e0937e701ddd"
+          apiKey: process.env.FIREBASE_API_KEY,
+          authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+          projectId: process.env.FIREBASE_PROJECT_ID,
+          storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+          messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+          appId: process.env.FIREBASE_APP_ID
         };
-      
+        
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
       </script>
