@@ -1,7 +1,7 @@
 {
   "name": "C-waste",
   "short_name": "C-waste",
-  "start_url": "/index.html",
+  "start_url": "https://shard-02.github.io/c-waste/c-waste.html",
   "display": "standalone",
   "background_color": "#1f3623",
   "theme_color": "#1f3623",
