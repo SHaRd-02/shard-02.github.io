@@ -1,7 +1,7 @@
 const CACHE_NAME = 'c-waste-cache-v1';
 const urlsToCache = [
     '/',
-    '/index.html',
+    '/c-waste.html',
     '/styles.css',
     '/app.js',
     '/firestore.js',
